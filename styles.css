@@ -16,13 +16,15 @@ body {
 }
 
 .principal {
-    background-image: url("img/Background.png");
+    background-image: url("Background.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 .container {
     height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 .container__batao {
@@ -30,5 +32,9 @@ body {
     border-radius: 5px;
     padding: 1em;
     color: var(--branco-principal);
-    
+    display: block;
+}
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
 }
